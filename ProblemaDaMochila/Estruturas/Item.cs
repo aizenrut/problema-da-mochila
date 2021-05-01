@@ -3,5 +3,5 @@
 
 namespace ProblemaDaMochila.Estruturas
 {
-    public record Item(int Valor, int Peso, int Numero);
+    public record Item(int Peso, int Valor);
 }

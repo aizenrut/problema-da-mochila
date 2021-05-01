@@ -57,14 +57,12 @@ namespace ProblemaDaMochila
             var capacidadeMochila = Convert.ToInt32(stream.ReadLine());
             var itens = new List<Item>();
 
-            var numeroItem = 1;
-
             string linha;
             while((linha = stream.ReadLine()) != null)
             {
                 var dados = linha.Split('\t');
 
-                itens.Add(new Item(Convert.ToInt32(dados[0]), Convert.ToInt32(dados[1]), numeroItem++));
+                itens.Add(new Item(Convert.ToInt32(dados[0]), Convert.ToInt32(dados[1])));
             }
 
             return (capacidadeMochila, itens.ToArray());
